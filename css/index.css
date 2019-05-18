@@ -289,6 +289,10 @@ footer {
     padding: 20px 7% 20px;
   }
 }
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
