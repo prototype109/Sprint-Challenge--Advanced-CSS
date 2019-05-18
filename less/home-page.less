@@ -11,6 +11,14 @@
     p {
       padding:0 15px;
     }
+
+    img{ 
+      border-radius: 5px;
+
+      @media @phone{
+        width: 96.5vw;
+      }
+    }
   
   }
 
@@ -18,13 +26,31 @@
     //display: flex;
     //flex-wrap: wrap;
     .display(~"wrap", ~"flex-start", ~"stretch", ~"row");
-    width: 100%;
+    .maximum-width;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .sky{
+      @media @phone{
+        display: none;
+      }
+    }
+
+    .launch{
+      @media @phone{
+        display: none;
+      }
+    }
+
+    .blast{
+      @media @phone{
+        width: 100%;
+      }
     }
   }
 
@@ -62,6 +88,11 @@
       .btn {
         .customButton;
       }
+
+      @media @phone{
+        width: 100%;
+        margin-top: 15px;
+      }
     }
 
     .walk-img {
@@ -73,6 +104,17 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+
+    @media @phone{
+      .display(~"nowrap",~"flex-start",~"stretch",~"column-reverse");
+      padding: 0 15px;
     }
   }
 }// home
