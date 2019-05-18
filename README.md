@@ -48,7 +48,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
+	Preprocessing is simplifying our readability of our css by giving the same structure as an html file while giving us tools to make it easier to copy and use similar lines of css
+	to style different elements.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+	My favorite concept in preprocessing is parametric mixins, The concept that gives me the most trouble is when to use a regular mixin especially when I don't have
+	very many css codes that are similar enough to justify using one isntead of parametric.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
