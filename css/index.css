@@ -167,7 +167,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e7e3e3;
+  background-color: #F6F6F6;
   margin: 0 -13%;
 }
 .nav-section nav {
@@ -232,6 +232,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 5px 5% 2px;
+  background: #22283A;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
