@@ -165,15 +165,17 @@ p {
 }
 .nav-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   background-color: #F6F6F6;
   margin: 0 -13%;
 }
 .nav-section nav {
   width: 100%;
   margin: 20px 0;
-  margin-left: 49%;
+  padding-left: 31%;
 }
 .nav-section nav a {
   font-size: 1.5rem;
@@ -200,6 +202,9 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
   width: 100%;
 }
 .home .space-images img {
@@ -222,7 +227,10 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -234,7 +242,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  padding: 5px 5% 2px;
+  padding: 5px 7% 2px;
   background: #22283A;
   color: white;
   border-radius: 5px;

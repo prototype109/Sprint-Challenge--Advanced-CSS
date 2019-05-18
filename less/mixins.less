@@ -1,9 +1,17 @@
 // Mixins Here
 
 .customButton(@background: @btn-bg-color, @font-color: white){
-    padding: 5px 5% 2px;
+    padding: 5px 7% 2px;
     background: @background;
     color: @font-color;
     border-radius: 5px;
     border: 1px solid @background;
+}
+
+.display(@wrap, @justify, @align, @direction){
+    display: flex;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
 }
