@@ -34,8 +34,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-	Adaptive covers only a few devices and using media queries and information gained from the meta viewport tag to adapt the design of the website for those devices. Adaptive
-	is very quick to create as you are limiting the amount of devices you are coding for. Responsive means you are making designs for multiple devices which take longer to make.
+	Adaptive only uses media queries and is designed for a lesser amount of devices as the breakpoints are fewer than a responsive design. Responsive website include 
+	many more devices and breakpoints needed to achieve a smoother feel when changing sizes and often uses relative font sizes that scale to the devices screen width.
 
 2. Describe what it means to be mobile first vs desktop first.
 
@@ -44,7 +44,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 	
-	uses a responsive font size that is equal to 10/16 px's.
+	Uses a responsive font size that scales instead of being a fixed unit and is equal to 10/16 px's.
 
 4. How would you describe preprocessing to someone new to CSS?
 
