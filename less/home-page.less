@@ -11,19 +11,46 @@
     p {
       padding:0 15px;
     }
+
+    img{ 
+      border-radius: 5px;
+
+      @media @phone{
+        width: 96.5vw;
+      }
+    }
   
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    //display: flex;
+    //flex-wrap: wrap;
+    .display(~"wrap", ~"flex-start", ~"stretch", ~"row");
+    .maximum-width;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .sky{
+      @media @phone{
+        display: none;
+      }
+    }
+
+    .launch{
+      @media @phone{
+        display: none;
+      }
+    }
+
+    .blast{
+      @media @phone{
+        width: 100%;
+      }
     }
   }
 
@@ -43,8 +70,9 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
+    .display(~"nowrap", ~"center", ~"stretch", ~"row");
 
     .walk-text {
       width: 50%;
@@ -58,6 +86,12 @@
       }
 
       .btn {
+        .customButton;
+      }
+
+      @media @phone{
+        width: 100%;
+        margin-top: 15px;
       }
     }
 
@@ -70,6 +104,17 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+
+    @media @phone{
+      .display(~"nowrap",~"flex-start",~"stretch",~"column-reverse");
+      padding: 0 15px;
     }
   }
 }// home

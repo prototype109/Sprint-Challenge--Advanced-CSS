@@ -1,1 +1,30 @@
 // Navigation code here
+.nav-section{
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    .display(~"nowrap", ~"flex-start", ~"center", ~"column");
+    background-color: @wild-sand;
+    margin: 0 -13%;
+
+    nav{
+        .maximum-width;
+        margin: 20px 0;
+        padding-left: 31%;
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+            margin: 0 2%;   
+        }
+
+        @media @phone{
+            padding-left: 16%;
+        }
+    }
+
+    @media @phone{
+        max-width: 100vw;
+        margin: 0;
+    }
+}
